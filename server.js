@@ -11,6 +11,3 @@ const server = new ApolloServer({
 server.listen().then(({ url }) => {
   console.log("Rick&Morty listening on 4000");
 });
-
-// TODO: graphql scheması olustur ve jsona bu model aracılığıyla crud işlem yaptır
-// TODO: 1-2 model olustur => benawad'in model yapılarına bak
