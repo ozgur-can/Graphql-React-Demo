@@ -1,37 +1,46 @@
 {
-  "name": "countries-explorer",
-  "version": "1.0.0",
-  "description": "a project that uses graphql + react",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zgrcnltnk/countries-explorer.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zgrcnltnk/countries-explorer/issues"
-  },
-  "homepage": "https://github.com/zgrcnltnk/countries-explorer#readme",
+  "name": "rick-and-morty-client",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "apollo-server": "^2.9.16",
+    "@apollo/react-hooks": "^3.1.3",
+    "@babel/runtime": "^7.8.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "apollo-boost": "^0.4.7",
+    "apollo-cache-persist": "^0.1.1",
     "graphql": "^14.5.8",
-    "graphql-relay": "^0.6.0",
-    "graphql-sequelize": "^9.4.0",
-    "graphql-yoga": "^1.18.3",
-    "lodash.toarray": "^4.4.0",
-    "lowdb": "^1.0.0",
-    "mongoose": "^5.8.9",
-    "mysql2": "^2.1.0",
-    "sequelize": "^5.21.3"
+    "graphql-tag": "^2.10.1",
+    "react": "^16.12.0",
+    "react-apollo": "^3.1.3",
+    "react-dom": "^16.12.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2",
+    "styled-components": "^5.0.0"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
