@@ -11,7 +11,7 @@ import { persistCache } from "apollo-cache-persist";
 const cache = new InMemoryCache();
 
 const client = new ApolloClient({
-  uri: "http://192.168.1.106:4000",
+  uri: "http://localhost:4000",
   clientState: {
     defaults: {
       selectedCharID: null
