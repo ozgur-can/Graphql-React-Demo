@@ -3,7 +3,6 @@ import CharacterList from "./components/CharacterList";
 import Character from "./pages/Character";
 import { BrowserRouter as Switch, Route } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
-import { Footer, FooterSection } from "./styled-components";
 
 const App = () => {
   return (

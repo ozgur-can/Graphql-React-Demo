@@ -22,3 +22,7 @@ export const Footer = styled.footer`
   text-align: center;
   font-weight: bold;
 `;
+
+export const CardSection = styled.div`
+  color: black;
+`;

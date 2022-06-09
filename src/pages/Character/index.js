@@ -38,7 +38,7 @@ const Char = item => {
   let history = useHistory();
 
   return (
-    <Segment inverted color="yellow">
+    <Segment>
       <Item.Group>
         <Item>
           <Item.Image size="small" src={item.item.image} />
