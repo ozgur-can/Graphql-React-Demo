@@ -1,9 +1,6 @@
-# rick-and-morty-graphql-apollo-lowdb
+<h2 align="center">Basic app with GraphQL & React</h2>
 
-In this project, used static json data with lowdb package for graphql server and printed on a react client with apollo state
-
-### `run on cli:`
-### `npm install`
-### `"cd rick-and-morty-graphql-api/ && npm start" for server` 
-### `"npm start" for client`
-
+🚀 [Live Demo](https://resplendent-praline-5ccb40.netlify.app)
+- used dummy data with **lowdb** for graphql server,
+- rendered results from api on the screen using **apollo state**.
+- design using **semantic ui**
