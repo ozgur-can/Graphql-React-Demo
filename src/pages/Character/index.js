@@ -38,7 +38,7 @@ const Char = item => {
   let history = useHistory();
 
   return (
-    <Segment>
+    <Segment inverted color="yellow">
       <Item.Group>
         <Item>
           <Item.Image size="small" src={item.item.image} />
@@ -58,7 +58,7 @@ const Char = item => {
               </CardSection>
             </Item.Description>
             <Button
-              style={{ marginTop: "1em" }}
+              style={{ marginTop: "2em" }}
               as="a"
               onClick={() => history.push("/")}
               positive

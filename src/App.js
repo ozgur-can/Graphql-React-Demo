@@ -7,7 +7,7 @@ import { Footer, FooterSection } from "./styled-components";
 
 const App = () => {
   return (
-    <div style={{ margin: "1em 1.5em 1em 1.5em" }}>
+    <div style={{ margin: "3em 4em" }}>
       <Switch>
         <Route exact path="/">
           <CharacterList />
@@ -16,9 +16,6 @@ const App = () => {
           <Character />
         </Route>
       </Switch>
-      <Footer>
-        <FooterSection>özgür can altınok</FooterSection>
-      </Footer>
     </div>
   );
 };

@@ -26,7 +26,7 @@ const CharacterCard = item => {
 
   return (
     <Card>
-      <Image src={item.item.image} wrapped ui={true} />
+      <Image src={item.item.image} wrapped ui={true} as={"a"} href={`/character/${item.item.id}`} />
       <Card.Content>
         <CardHeader>
           <ALink

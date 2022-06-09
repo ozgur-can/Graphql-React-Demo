@@ -22,11 +22,3 @@ export const Footer = styled.footer`
   text-align: center;
   font-weight: bold;
 `;
-
-export const FooterSection = styled.div`
-  color: #fb6467ff;
-`;
-
-export const CardSection = styled.div`
-  color: black;
-`;
