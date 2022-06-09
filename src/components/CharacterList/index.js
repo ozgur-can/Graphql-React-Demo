@@ -14,37 +14,40 @@ import { ALink, BoldText } from "../../styled-components/";
 import { useHistory } from "react-router-dom";
 import { CardSection } from "../../styled-components";
 
-const statusIcon = status => {
-  if (status === "Alive") return <Icon name="heart"></Icon>;
-  else if (status === "Dead") return <Icon name="flag outline" />;
-  else return <Icon name="user secret" />;
-};
-
-const CharacterCard = item => {
+const CharacterCard = ({ item }) => {
   const client = useApolloClient();
   let history = useHistory();
 
   return (
     <Card>
-      <Image src={item.item.image} wrapped ui={true} as={"a"} href={`/character/${item.item.id}`} />
+      <Image src={item.image} wrapped ui={true} />
       <Card.Content>
         <CardHeader>
-          <ALink
-            onClick={() => {
-              client.writeData({ data: { selectedCharID: item.item.id } });
-              history.push(`/character/${item.item.id}`);
-            }}
-          >
-            {item.item.name}
-          </ALink>{" "}
-          {statusIcon(item.item.status)}
+          <div class="ui two column grid">
+            <div class="row">
+              <div class="column">
+                {item.name}
+              </div>
+              <div class="column">
+                <ALink
+                  onClick={() => {
+                    client.writeData({ data: { selectedCharID: item.id } });
+                    history.push(`/character/${item.id}`);
+                  }}
+                >
+                  <Icon name="hand point right" />
+                  info
+                </ALink>
+              </div>
+            </div>
+          </div>
         </CardHeader>
         <Card.Description>
           <CardSection>
-            <BoldText>Species:</BoldText> {item.item.species}
+            <BoldText>Species:</BoldText> {item.species}
           </CardSection>
           <CardSection>
-            <BoldText>Gender:</BoldText> {item.item.gender}
+            <BoldText>Gender:</BoldText> {item.gender}
           </CardSection>
         </Card.Description>
       </Card.Content>

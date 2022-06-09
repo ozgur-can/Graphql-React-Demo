@@ -28,33 +28,30 @@ const GET_CHARACTER_CLIENT = gql`
   }
 `;
 
-const statusIcon = status => {
-  if (status === "Alive") return <Icon name="heart"></Icon>;
-  else if (status === "Dead") return <Icon name="flag outline" />;
-  else return <Icon name="user secret" />;
-};
-
-const Char = item => {
+const Char = ({ item }) => {
   let history = useHistory();
 
   return (
     <Segment>
       <Item.Group>
         <Item>
-          <Item.Image size="small" src={item.item.image} />
+          <Item.Image size="small" src={item.image} />
           <Item.Content verticalAlign="middle">
             <Item.Header>
-              {item.item.name} {statusIcon(item.item.status)}
+              {item.name}
             </Item.Header>
             <Item.Description>
               <CardSection>
-                <BoldText>Species:</BoldText> {item.item.species}
+                <BoldText>Species:</BoldText> {item.species}
               </CardSection>
               <CardSection>
-                <BoldText>Gender:</BoldText> {item.item.gender}
+                <BoldText>Status:</BoldText> {item.status}
               </CardSection>
               <CardSection>
-                <BoldText>Location:</BoldText> {item.item.location.name}
+                <BoldText>Gender:</BoldText> {item.gender}
+              </CardSection>
+              <CardSection>
+                <BoldText>Location:</BoldText> {item.location.name}
               </CardSection>
             </Item.Description>
             <Button
