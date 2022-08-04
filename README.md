@@ -1,6 +1,15 @@
-<h2 align="center">Basic app with GraphQL & React</h2>
+<h2 align="center"><b>GraphQL & React Demo</b></h2>
 
-🚀 [Live Demo](https://resplendent-praline-5ccb40.netlify.app)
-- used dummy data with **lowdb** for graphql server,
-- rendered results from api on the screen using **apollo state**.
-- design using **semantic ui**
+- Used dummy data with **Lowdb** for graphql server,
+- Rendered results from api on the screen using **Apollo State**.
+- Design using **Semantic IO**
+
+<br>
+
+**Code Run Steps**
+
+```
+- npm install / yarn
+
+- npm run app / yarn app
+```
