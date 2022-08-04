@@ -2,7 +2,7 @@
 
 - Used dummy data with **Lowdb** for graphql server,
 - Rendered results from api on the screen using **Apollo State**.
-- Design using **Semantic IO**
+- Design using **Semantic UI**
 
 <br>
 
